@@ -34,7 +34,11 @@
 /* #region Header */
 
 #app_header {
+  position: relative;
+  z-index: 1;
   height: 70px;
+  background-color: var(--db-light);
+  box-shadow: 0 0 5px 0 var(--db-dark);
 }
 
 #app_header .dropdown .dropdown-toggle::after {
