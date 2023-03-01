@@ -1,6 +1,7 @@
 /* #region Common */
 
 :root {
+  --db-light: #f8f9fa;
   --db-neutral: #e5e5e5;
   --db-neutral-semitransparent: #e5e5e566;
   --db-notifications: #ff8f00;
@@ -85,6 +86,10 @@ aside li:hover,
 
 #toolbar .new_student_offcanvas {
   width: 700px;
+}
+
+#main_content {
+  background-color: var(--db-light);
 }
 
 /* #endregion Content Wrapper */
