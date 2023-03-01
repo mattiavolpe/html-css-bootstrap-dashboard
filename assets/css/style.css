@@ -78,7 +78,8 @@ aside li:hover,
 @media screen and (min-width: 1200px) {
 
   aside {
-    width: 150px;
+    width: unset;
+    max-width: 200px;
   }
 
 }
