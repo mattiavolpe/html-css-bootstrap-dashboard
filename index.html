@@ -125,20 +125,21 @@
       </aside>
       <!-- /aside -->
 
-      <main id="app_main" class="flex-grow-1">
+      <main id="app_main" class="flex-grow-1 overflow-auto">
 
         <div class="container-fluid">
-          <div id="toolbar" class="row row-cols-1 row-cols-md-3 align-items-start text-white">
+          
+          <div id="toolbar" class="row align-items-start text-white">
 
-            <div class="col order-md-1">
+            <div class="col-12 col-md-4 col-xl-3 text-md-end order-md-1 py-3">
               <a class="btn text-white px-0" data-bs-toggle="offcanvas" href="#offcanvas_new_student" role="button" aria-controls="offcanvas">
-                <div class="d-flex align-items-center fw-semibold">
-                  <span>Nuovo Studente</span>
+                <div class="d-flex align-items-center flex-wrap">
+                  <span class="fs-6 me-3">Nuovo Studente</span>
                   <span class="ms_square">&plus;</span>
                 </div>
                 <!-- /.d-flex align-items-center -->
               </a>
-              <div class="offcanvas offcanvas-end text-black new_student_offcanvas" tabindex="-1" id="offcanvas_new_student" aria-labelledby="offcanvasLabel">
+              <div class="offcanvas offcanvas-end text-black new_student_offcanvas text-start" tabindex="-1" id="offcanvas_new_student" aria-labelledby="offcanvasLabel">
                 <div class="offcanvas-header">
                   <h6 class="offcanvas-title" id="offcanvasLabel">Inserisci un nuovo studente</h6>
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -250,20 +251,40 @@
                 </div>
               </div>
             </div>
-            <!-- /.col -->
+            <!-- /.col-12 col-md-4 col-xl-3 -->
 
-            <div class="col">
-              lorem
+            <div class="col-12 col-md-4 col-xl-6 py-3">
+              <div class="d-flex align-items-center flex-wrap">
+                <span class="fs-2 me-3">Boolean</span>
+                <span class="badge rounded-pill text-bg-dark bg-opacity-25">Piano blaze</span>
+              </div>
+              <div class="d-flex align-items-center flex-wrap fw-semibold">
+                <span class="badge rounded-pill text-bg-dark bg-opacity-25 my-1 me-2">3 app</span>
+                <span class="my-1 me-2">&RightAngleBracket;&RightAngleBracket;</span>
+                <p class="d-xl-none m-0">
+                  <a class="badge rounded-pill text-bg-dark bg-opacity-25 my-1 me-2 text-decoration-none" data-bs-toggle="collapse" href="#badge_collapse" role="button" aria-expanded="false" aria-controls="badge_collapse">
+                    &plus;
+                  </a>
+                </p>
+                <div class="collapse d-xl-block" id="badge_collapse">
+                  <div class="card card-body p-0 bg-transparent border-0 flex-row flex-wrap">
+                    <span class="badge rounded-pill text-bg-dark bg-opacity-25 my-1 me-2">Boolean mobile app</span>
+                    <span class="badge rounded-pill text-bg-dark bg-opacity-25 my-1 me-2">Boolean web app</span>
+                    <span class="badge rounded-pill text-bg-dark bg-opacity-25 my-1 me-2">Boolean blog app</span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <!-- /.col -->
+            <!-- /.col-12 col-md-4 col-xl-6 -->
 
-            <div class="col">
-              lorem
+            <div class="col-12 col-md-4 col-xl-3 py-3">
+              <div class="fs-6">Studenti online negli ultimi 30 minuti</div>
+              <div class="fs-2">125</div>
             </div>
-            <!-- /.col -->
+            <!-- /.col-12 col-md-4 col-xl-3 -->
 
           </div>
-          <!-- /.row row-cols-1 row-cols-md-3 -->
+          <!-- /#toolbar -->
 
         </div>
         <!-- /.container-fluid -->
