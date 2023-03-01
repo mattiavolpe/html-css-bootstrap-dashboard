@@ -41,6 +41,15 @@
   box-shadow: 0 0 5px 0 var(--db-dark);
 }
 
+#app_header i:not(.dropdown i) {
+  transition: color 0.2s;
+}
+
+#app_header i:not(.dropdown i):hover {
+  cursor: pointer;
+  color: var(--db-primary);
+}
+
 #app_header .dropdown .dropdown-toggle::after {
   content: none;
 }
@@ -77,7 +86,6 @@ aside li:hover i {
   animation: mirror 2s linear infinite;
 }
 
-
 #aside_bottom > div:hover i {
   animation: spin 2s linear infinite;
 }
@@ -95,12 +103,12 @@ aside li:hover i {
   font-size: 1.5rem;
   border: 1px solid white;
   border-radius: 5px;
-  transition: background-color 0.2s linear, color 0.2s linear, transform 1s;
+  transition: background-color 0.2s, color 0.2s, transform 1.3s;
 }
 
 #toolbar .ms_square:hover {
   background-color: white;
-  color: black;
+  color: var(--db-primary);
   transform: rotate(360deg);
 }
 
@@ -163,3 +171,32 @@ aside li:hover i {
 }
 
 /* #endregion Responsive */
+
+/* #region Scrollbar */
+
+  /* CHROME AND SAFARI(MACOS) SUPPORT */
+  #app_main::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  #app_main::-webkit-scrollbar-thumb {
+    background-color: var(--db-primary);
+    border: 1px solid #5099ff;
+    border-radius: 4px;
+  }
+
+  #app_main::-webkit-scrollbar-thumb:hover {
+    background-color: #5099ff;
+  }
+
+  #app_main::-webkit-scrollbar-track {
+    background-color: var(--db-neutral);
+    border-radius: 4px;
+  }
+
+  /* FIREFOX SUPPORT */
+  #app_main {
+    scrollbar-color: var(--db-primary) var(--db-neutral);
+  }
+
+/* #endregion Scrollbar */
