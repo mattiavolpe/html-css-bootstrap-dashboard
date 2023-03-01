@@ -97,7 +97,6 @@ aside li:hover i {
 #toolbar .ms_square {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 40px;
   aspect-ratio: 1 / 1;
   font-size: 1.5rem;
