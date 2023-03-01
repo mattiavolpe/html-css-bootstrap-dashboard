@@ -14,7 +14,7 @@
     <title>Bootstrap Dashboard</title>
   </head>
   
-  <body class="debug">
+  <body>
 
     <header id="app_header" class="container-fluid">
 
@@ -28,10 +28,10 @@
 
         <div class="col px-4">
           <div class="input-group">
-            <span class="input-group-text px-1 border-end-0 search_bg" id="search">
+            <span class="input-group-text px-1 border-end-0 search_bg" id="search_icon">
               <i class="fa-solid fa-magnifying-glass fa-fw"></i>
             </span>
-            <input type="search" class="form-control border-start-0 search_bg" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username" aria-describedby="search">
+            <input type="search" class="form-control border-start-0 search_bg" placeholder="Prova a cercare: Lezioni di Laravel">
           </div>
         </div>
         <!-- /.col flex-grow-1 -->
@@ -126,6 +126,148 @@
       <!-- /aside -->
 
       <main id="app_main" class="flex-grow-1">
+
+        <div class="container-fluid">
+          <div id="toolbar" class="row row-cols-1 row-cols-md-3 align-items-start text-white">
+
+            <div class="col order-md-1">
+              <a class="btn text-white px-0" data-bs-toggle="offcanvas" href="#offcanvas_new_student" role="button" aria-controls="offcanvas">
+                <div class="d-flex align-items-center fw-semibold">
+                  <span>Nuovo Studente</span>
+                  <span class="ms_square">&plus;</span>
+                </div>
+                <!-- /.d-flex align-items-center -->
+              </a>
+              <div class="offcanvas offcanvas-end text-black new_student_offcanvas" tabindex="-1" id="offcanvas_new_student" aria-labelledby="offcanvasLabel">
+                <div class="offcanvas-header">
+                  <h6 class="offcanvas-title" id="offcanvasLabel">Inserisci un nuovo studente</h6>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <form class="row g-3">
+
+                    <div class="col-md-6">
+                      <label for="new_student_name" class="form-label">Nome</label>
+                      <input type="text" class="form-control" id="new_student_name" required>
+                    </div>
+                    <!-- /new_student_name -->
+
+                    <div class="col-md-6">
+                      <label for="new_student_surname" class="form-label">Cognome</label>
+                      <input type="text" class="form-control" id="new_student_surname" required>
+                    </div>
+                    <!-- /new_student_surname -->
+
+                    <div class="col-md-6">
+                      <label for="new_student_email" class="form-label">Email</label>
+                      <div class="input-group">
+                        <span class="input-group-text px-2 search_bg" id="new_student_email_icon">
+                          <i class="fa-solid fa-at fa-fw"></i>
+                        </span>
+                        <input type="email" class="form-control" id="new_student_email" required>
+                      </div>
+                    </div>
+                    <!-- /new_student_email -->
+
+                    <div class="col-md-6">
+                      <label for="new_student_password" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="new_student_password" required>
+                    </div>
+                    <!-- /new_student_password -->
+
+                    <div class="col-md-6">
+                      <label for="new_student_confirm_email" class="form-label">Conferma Email</label>
+                      <div class="input-group">
+                        <span class="input-group-text px-2 search_bg" id="new_student_confirm_email_icon">
+                          <i class="fa-solid fa-at fa-fw"></i>
+                        </span>
+                        <input type="email" class="form-control" id="new_student_confirm_email" required>
+                      </div>
+                    </div>
+                    <!-- /new_student_confirm_email -->
+
+                    <div class="col-md-6">
+                      <label for="new_student_confirm_password" class="form-label">Conferma Password</label>
+                      <input type="password" class="form-control" id="new_student_confirm_password" required>
+                    </div>
+                    <!-- /new_student_confirm_password -->
+
+                    <div class="col-12">
+                      <label for="new_student_address" class="form-label">Indirizzo</label>
+                      <input type="text" class="form-control" id="new_student_address" required>
+                    </div>
+                    <!-- /new_student_address -->
+
+                    <div class="col-md-6">
+                      <label for="new_student_city" class="form-label">Citt&agrave;</label>
+                      <input type="text" class="form-control" id="new_student_city" required>
+                    </div>
+                    <!-- /new_student_city -->
+
+                    <div class="col-md-4">
+                      <label for="new_student_country" class="form-label">Stato</label>
+                      <select id="new_student_country" class="form-select" required>
+                        <option selected>Scegli...</option>
+                        <option>Italy</option>
+                        <option>Czech Republic</option>
+                        <option>France</option>
+                        <option>Spain</option>
+                        <option>United Kingdom</option>
+                        <option>U.S.A.</option>
+                      </select>
+                    </div>
+                    <!-- /new_student_country -->
+
+                    <div class="col-md-2">
+                      <label for="new_student_zip" class="form-label">CAP</label>
+                      <input type="text" class="form-control" id="new_student_zip" required>
+                    </div>
+                    <!-- /new_student_zip -->
+
+                    <div class="col-12">
+                      <label for="new_student_photo" class="form-label">Foto</label>
+                      <input type="file" class="form-control" id="new_student_photo" required>
+                    </div>
+                    <!-- /new_student_photo -->
+
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="new_student_form_check" required>
+                        <label class="form-check-label" for="new_student_form_check">
+                          Seleziona per proseguire
+                        </label>
+                      </div>
+                    </div>
+                    <!-- /form-check -->
+
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary">Salva</button>
+                      <button type="reset" class="btn btn-warning">Svuota</button>
+                    </div>
+                    <!-- /submit reset -->
+
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- /.col -->
+
+            <div class="col">
+              lorem
+            </div>
+            <!-- /.col -->
+
+            <div class="col">
+              lorem
+            </div>
+            <!-- /.col -->
+
+          </div>
+          <!-- /.row row-cols-1 row-cols-md-3 -->
+
+        </div>
+        <!-- /.container-fluid -->
+
       </main>
       <!-- /#app_main -->
 

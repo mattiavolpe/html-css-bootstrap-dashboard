@@ -5,6 +5,7 @@
   --db-neutral-semitransparent: #e5e5e566;
   --db-notifications: #ff8f00;
   --db-dark: #051e34;
+  --db-primary: #1b72e8;
 }
 
 /* #endregion Common */
@@ -24,10 +25,6 @@
 /* #region Debug */
 
 .debug * {
-  /* outline: 1px solid red; */
-}
-
-.debug #content_wrapper * {
   /* outline: 1px solid red; */
 }
 
@@ -69,6 +66,26 @@ aside li:hover,
   background-color: var(--db-neutral-semitransparent);
   border-radius: 5px;
   cursor: pointer;
+}
+
+#toolbar {
+  background-color: var(--db-primary);
+}
+
+#toolbar .ms_square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  aspect-ratio: 1 / 1;
+  font-size: 1.5rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+#toolbar .new_student_offcanvas {
+  width: 700px;
 }
 
 /* #endregion Content Wrapper */
