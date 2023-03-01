@@ -25,7 +25,7 @@
 /* #region Debug */
 
 .debug * {
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 
 /* #endregion Debug */
@@ -91,11 +91,23 @@ aside li:hover,
 
 /* #region Responsive */
 
+@media screen and (max-width: 1199px) {
+
+  #toolbar .new_student_offcanvas {
+    width: 100vw;
+  }
+
+}
+
 @media screen and (min-width: 1200px) {
 
   aside {
     width: unset;
     max-width: 200px;
+  }
+
+  #next_classes thead th:first-child {
+    width: 50%;
   }
 
 }
