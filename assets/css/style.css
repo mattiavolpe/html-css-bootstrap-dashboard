@@ -1,0 +1,66 @@
+/* #region Common */
+
+:root {
+  --db-neutral: #e5e5e5;
+  --db-notifications: #ff8f00;
+}
+
+/* #endregion Common */
+
+/* #region Utilities */
+
+.search_bg {
+  background-color: var(--db-neutral);
+}
+
+.notifications_color {
+  color: var(--db-notifications);
+}
+
+/* #endregion Utilities */
+
+/* #region Debug */
+
+.debug * {
+  /* outline: 1px solid red; */
+}
+
+/* #endregion Debug */
+
+/* #region Header */
+
+#app_header {
+  height: 70px;
+}
+
+#app_header .dropdown .dropdown-toggle::after {
+  content: none;
+}
+
+/* #endregion Header */
+
+/* #region Content Wrapper */
+
+#content_wrapper {
+  height: calc(100vh - 70px);
+  /* USE SVH TO MAKE 100VH TAKE CARE OF UI TOOLBARS - IF NOT SUPPORTED, CLASSIC 100VH WILL BE USED */
+  height: calc(100svh - 70px);
+}
+
+aside {
+  width: 70px;
+}
+
+/* #endregion Content Wrapper */
+
+/* #region Responsive */
+
+@media screen and (min-width: 1200px) {
+
+  aside {
+    width: 150px;
+  }
+
+}
+
+/* #endregion Responsive */

@@ -14,22 +14,68 @@
     <title>Bootstrap Dashboard</title>
   </head>
   
-  <body>
+  <body class="debug">
 
-    <header id="app_header">
+    <header id="app_header" class="container-fluid">
+
+      <div class="row h-100 align-items-center">
+
+        <div class="col flex-grow-0">
+          <img width="40" src="./assets/img/mobile-logo.png" alt="">
+        </div>
+        <!-- /.col -->
+
+        <div class="col px-4">
+          <div class="input-group">
+            <span class="input-group-text px-1 border-end-0 search_bg" id="search">
+              <i class="fa-solid fa-magnifying-glass fa-fw"></i>
+            </span>
+            <input type="search" class="form-control border-start-0 search_bg" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username" aria-describedby="search">
+          </div>
+        </div>
+        <!-- /.col flex-grow-1 -->
+
+        <div class="col flex-grow-0">
+
+          <div class="d-flex align-items-center">
+
+            <div class="d-none d-xl-inline me-2 text-nowrap">
+              <i class="fa-solid fa-list-ul fa-fw"></i>
+              <i class="fa-solid fa-circle-question fa-fw mx-2"></i>
+              <i class="fa-solid fa-ellipsis-vertical fa-fw"></i>
+            </div>
+
+            <div class="dropdown">
+              <a class="btn p-0 dropdown-toggle dropdown-menu-end" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-bell fa-fw notifications_color"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Profilo</a></li>
+                <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </div>
+            <!-- /.dropdown-menu -->
+            
+          </div>
+          <!-- /.d-flex align-items-center -->
+
+        </div>
+        <!-- /.col -->
+
+      </div>
+      <!-- /.row -->
 
     </header>
     <!-- /#app_header -->
 
-    <div id="content_wrapper">
+    <div id="content_wrapper" class="d-flex">
 
       <aside>
-
       </aside>
       <!-- /aside -->
 
-      <main id="app_main">
-
+      <main id="app_main" class="flex-grow-1">
       </main>
       <!-- /#app_main -->
 
