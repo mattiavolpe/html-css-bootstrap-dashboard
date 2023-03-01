@@ -82,8 +82,16 @@ aside li:hover,
   cursor: pointer;
 }
 
+aside li i {
+  animation: mirror_out 0.4s linear;
+}
+
 aside li:hover i {
   animation: mirror 2s linear infinite;
+}
+
+#aside_bottom > div i {
+  animation: spin_out 0.4s linear;
 }
 
 #aside_bottom > div:hover i {
@@ -132,6 +140,15 @@ aside li:hover i {
   }
 }
 
+@keyframes spin_out {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
 @keyframes mirror {
   0% {
     transform: rotateY(0deg);
@@ -141,6 +158,15 @@ aside li:hover i {
   }
   100% {
     transform: rotateY(360deg);
+  }
+}
+
+@keyframes mirror_out {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
   }
 }
 
