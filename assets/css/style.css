@@ -2,7 +2,9 @@
 
 :root {
   --db-neutral: #e5e5e5;
+  --db-neutral-semitransparent: #e5e5e566;
   --db-notifications: #ff8f00;
+  --db-dark: #051e34;
 }
 
 /* #endregion Common */
@@ -22,6 +24,10 @@
 /* #region Debug */
 
 .debug * {
+  /* outline: 1px solid red; */
+}
+
+.debug #content_wrapper * {
   /* outline: 1px solid red; */
 }
 
@@ -49,6 +55,20 @@
 
 aside {
   width: 70px;
+  background: var(--db-dark) url('./../img/sidebar-bg.png');
+  background-size: cover;
+}
+
+aside li,
+#aside_bottom > div {
+  transition: all 0.2s;
+}
+
+aside li:hover,
+#aside_bottom > div:hover {
+  background-color: var(--db-neutral-semitransparent);
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 /* #endregion Content Wrapper */
