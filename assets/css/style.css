@@ -154,6 +154,16 @@ aside li:hover i {
   width: 100vw;
 }
 
+#main_content .card-header a[aria-expanded="true"] svg {
+  transform: rotate(-180deg);
+  transition: 0.2s ease-in-out;
+}
+
+#main_content .card-header a[aria-expanded="false"] svg {
+  transform: rotate(0deg);
+  transition: 0.2s ease-in-out;
+}
+
 #app_footer {
   font-size: 0.875rem;
   color: white;
