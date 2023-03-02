@@ -7,6 +7,11 @@
   --db-notifications: #ff8f00;
   --db-dark: #051e34;
   --db-primary: #1b72e8;
+  --db-font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--db-font-family);
 }
 
 /* #endregion Common */
@@ -22,7 +27,7 @@
   line-height: 38px;
   text-align: center;
   border-radius: 50%;
-  color: var(--bs-body-color);
+  color: var(--db-light);
   background-color: var(--db-primary);
   transition: background-color 0.2s, transform 0.2s;
 }
