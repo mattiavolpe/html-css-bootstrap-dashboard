@@ -154,6 +154,12 @@ aside li:hover i {
   width: 100vw;
 }
 
+#app_footer {
+  font-size: 0.875rem;
+  color: white;
+  background-color: var(--db-dark);
+}
+
 /* #endregion Content Wrapper */
 
 /* #region Animations */
