@@ -13,6 +13,28 @@
 
 /* #region Utilities */
 
+#back_to_top {
+  position: fixed;
+  bottom: 17px;
+  right: 17px;
+  z-index: 2;
+  width: 38px;
+  line-height: 38px;
+  text-align: center;
+  border-radius: 50%;
+  color: var(--bs-body-color);
+  background-color: var(--db-primary);
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+#back_to_top:hover {
+  background-color: #5099ff;
+}
+
+#back_to_top:active {
+  transform: scale(0.8);
+}
+
 .search_bg {
   background-color: var(--db-neutral);
 }
@@ -65,7 +87,7 @@
 }
 
 aside {
-  width: 70px;
+  width: 4.375rem;
   background: var(--db-dark) url('./../img/sidebar-bg.png');
   background-size: cover;
 }
@@ -98,6 +120,10 @@ aside li:hover i {
   animation: spin 2s linear infinite;
 }
 
+#app_main {
+  scroll-behavior: smooth;
+}
+
 #toolbar {
   background-color: var(--db-primary);
 }
@@ -105,7 +131,7 @@ aside li:hover i {
 #toolbar .ms_square {
   display: flex;
   justify-content: center;
-  width: 40px;
+  width: 2.5rem;
   aspect-ratio: 1 / 1;
   font-size: 1.5rem;
   border: 1px solid white;
@@ -119,8 +145,8 @@ aside li:hover i {
   transform: rotate(360deg);
 }
 
-#toolbar .new_student_offcanvas {
-  width: 700px;
+#offcanvas_new_student {
+  width: 100vw;
 }
 
 #main_content {
@@ -174,14 +200,6 @@ aside li:hover i {
 
 /* #region Responsive */
 
-@media screen and (max-width: 1199px) {
-
-  #toolbar .new_student_offcanvas {
-    width: 100vw;
-  }
-
-}
-
 @media screen and (min-width: 1200px) {
 
   aside {
@@ -189,6 +207,7 @@ aside li:hover i {
     max-width: 200px;
   }
 
+  #offcanvas_new_student,
   #next_classes thead th:first-child {
     width: 50%;
   }

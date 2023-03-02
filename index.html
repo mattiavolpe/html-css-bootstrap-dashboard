@@ -16,6 +16,10 @@
   
   <body>
 
+    <a id="back_to_top" href="#toolbar">
+      <i class="fa-solid fa-arrow-up-long fa-fw"></i>
+    </a>
+
     <header id="app_header" class="container-fluid">
 
       <div class="row h-100 align-items-center">
@@ -136,7 +140,7 @@
               <a class="btn text-white px-0" data-bs-toggle="offcanvas" href="#offcanvas_new_student" role="button" aria-controls="offcanvas_new_student">
                   <span class="ms_square">&plus;</span>
               </a>
-              <div class="offcanvas offcanvas-end text-black new_student_offcanvas text-start" tabindex="-1" id="offcanvas_new_student" aria-labelledby="offcanvasLabel">
+              <div id="offcanvas_new_student" class="offcanvas offcanvas-end text-black text-start" tabindex="-1" aria-labelledby="offcanvasLabel">
                 <div class="offcanvas-header">
                   <h5 class="offcanvas-title" id="offcanvasLabel">Inserisci un nuovo studente</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
