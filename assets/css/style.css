@@ -12,6 +12,7 @@
 
 body {
   font-family: var(--db-font-family);
+  background-color: var(--db-light);
 }
 
 /* #endregion Common */
@@ -64,7 +65,6 @@ body {
   position: relative;
   z-index: 1;
   height: 70px;
-  background-color: var(--db-light);
   box-shadow: 0 0 5px 0 var(--db-dark);
 }
 
@@ -152,10 +152,6 @@ aside li:hover i {
 
 #offcanvas_new_student {
   width: 100vw;
-}
-
-#main_content {
-  background-color: var(--db-light);
 }
 
 /* #endregion Content Wrapper */

@@ -295,9 +295,14 @@
 
             <div class="col-xl-8">
               <div id="next_classes" class="card mt-3">
-                <div class="card-header fs-5">Prossime classi</div>
+                <div class="card-header fs-5 d-flex justify-content-between align-items-center flex-wrap">
+                  <span class="me-2">Prossime classi</span>
+                  <a class="btn px-0" data-bs-toggle="collapse" href="#next_classes_body" role="button" aria-expanded="true" aria-controls="next_classes_body">
+                      Mostra / Nascondi
+                  </a>                 
+                </div>
                 <!-- /.card-header -->
-                <div class="card-body">
+                <div class="card-body collapse show" id="next_classes_body">
                   <div class="table-responsive">
                     <table class="table table-hover align-middle text-center">
                       <thead>
@@ -471,9 +476,14 @@
               </div>
               <!-- /#next_classes -->
               <div id="faq" class="card mt-3">
-                <div class="card-header fs-5 text-uppercase">F.A.Q.</div>
+                <div class="card-header fs-5 d-flex justify-content-between align-items-center flex-wrap">
+                  <span class="me-2">F.A.Q.</span>
+                  <a class="btn px-0" data-bs-toggle="collapse" href="#faq_body" role="button" aria-expanded="true" aria-controls="faq_body">
+                      Mostra / Nascondi
+                  </a>                 
+                </div>
                 <!-- /.card-header -->
-                <div class="card-body">
+                <div class="card-body collapse show" id="faq_body">
                   <div class="accordion accordion-flush" id="faq_accordion">
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="new_user_faq">
@@ -521,9 +531,14 @@
 
             <div class="col-xl-4">
               <div id="todo" class="card mt-3">
-                <div class="card-header fs-5">ToDo</div>
+                <div class="card-header fs-5 d-flex justify-content-between align-items-center flex-wrap">
+                  <span class="me-2">ToDo</span>
+                  <a class="btn px-0" data-bs-toggle="collapse" href="#todo_body" role="button" aria-expanded="true" aria-controls="todo_body">
+                      Mostra / Nascondi
+                  </a>                 
+                </div>
                 <!-- /.card-header -->
-                <div class="card-body">
+                <div class="card-body collapse show" id="todo_body">
                   <ul class="list-group">
                     <li class="list-group-item">
                       <div class="form-check">
@@ -555,7 +570,14 @@
               </div>
               <!-- /#todo -->
               <div id="graph" class="card mt-3">
-                <div class="card-body">
+                <div class="card-header fs-5 d-flex justify-content-between align-items-center flex-wrap">
+                  <span class="me-2">Attivit&agrave;</span>
+                  <a class="btn px-0" data-bs-toggle="collapse" href="#graph_body" role="button" aria-expanded="true" aria-controls="graph_body">
+                      Mostra / Nascondi
+                  </a>                 
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body collapse show" id="graph_body">
                   <div class="card">
                     <div class="card-body px-0 pb-0 border-bottom-0">
                       <img class="img-fluid px-3" src="./assets/img/stats.jpeg" alt="A bar graph">
